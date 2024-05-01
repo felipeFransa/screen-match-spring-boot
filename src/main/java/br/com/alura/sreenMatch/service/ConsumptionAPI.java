@@ -1,4 +1,4 @@
-package br.com.alura.sreenMatch;
+package br.com.alura.sreenMatch.service;
 
 import java.io.IOException;
 import java.net.URI;
@@ -6,9 +6,11 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class obterDados {
+public class ConsumptionAPI {
 
     public String obterDados(String endereco) {
+
+//        String endereco = "https://www.omdbapi.com/?i=tt3896198&apikey=3f9c31bf";
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(endereco))
