@@ -15,9 +15,8 @@ public class SreenMatchApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		var consumptionAPI = new ConsumptionAPI();
-		var json = consumptionAPI.obterDados("https://www.omdbapi.com/?i=tt3896198&apikey=3f9c31bf");
+		var json = consumptionAPI.getData("https://www.omdbapi.com/?i=tt3896198&apikey=3f9c31bf");
 
 		System.out.println(json);
 	}
 }
-

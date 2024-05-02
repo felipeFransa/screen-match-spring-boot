@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class ConsumptionAPI {
 
-    public String obterDados(String endereco) {
+    public String getData(String endereco) {
 
 //        String endereco = "https://www.omdbapi.com/?i=tt3896198&apikey=3f9c31bf";
         HttpClient client = HttpClient.newHttpClient();
@@ -28,5 +28,4 @@ public class ConsumptionAPI {
         String json = response.body();
         return json;
     }
-
 }
