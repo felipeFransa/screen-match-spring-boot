@@ -18,7 +18,7 @@ public class SreenMatchApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		Scanner reading = new Scanner(System.in);
-		System.out.println("Escolha um filme:");
+		System.out.println("Enter your title:");
 		String movie = reading.nextLine();
 		var consumptionAPI = new ConsumptionAPI();
 		var json = consumptionAPI.getData("https://www.omdbapi.com/?i=tt3896198&apikey=3f9c31bf");
